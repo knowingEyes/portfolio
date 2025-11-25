@@ -6,7 +6,7 @@ import Card from "@/components/ui/Card";
 const Expertise = () => {
   return (
     <section className=" border-b border-gray-900/50 relative">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="">
         <SectionLabel>Expertise</SectionLabel>
 
         <div className="grid lg:grid-cols-2 gap-16 ">

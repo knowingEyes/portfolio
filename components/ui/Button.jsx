@@ -24,7 +24,6 @@ const Button = ({
         "text-primary-400 p-0 hover:text-primary-300 underline-offset-4 hover:underline";
       break;
     default:
-      // Primary with subtle glow
       variantStyle =
         "bg-primary-600 text-white hover:bg-primary-500 shadow-[0_0_20px_rgba(37,99,235,0.3)] hover:shadow-[0_0_25px_rgba(59,130,246,0.5)] border border-primary-500/20";
   }
