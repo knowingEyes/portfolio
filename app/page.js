@@ -7,7 +7,7 @@ import Projects from "@/sections/Projects";
 
 export default function App() {
   return (
-    <main className="">
+    <main>
       <Header />
       <Hero />
       <About />

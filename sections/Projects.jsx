@@ -38,7 +38,7 @@ const STATS_DATA = [
 ];
 const Projects = () => {
   return (
-    <section>
+    <section id="projects">
       <SectionLabel>Projects</SectionLabel>
       <SectionTitle>
         Technical solutions engineered for scale and performance.

@@ -4,8 +4,8 @@ import SectionTitle from "../components/ui/SectionTitle";
 
 const About = () => {
   return (
-    <section>
-      <SectionLabel>Profile</SectionLabel>
+    <section id="about">
+      <SectionLabel>About</SectionLabel>
       <SectionTitle>Experience & Technical Stack</SectionTitle>
       <div className=" text-gray-400">
         <SectionSubtitle>

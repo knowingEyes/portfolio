@@ -1,8 +1,8 @@
-const SectionTitle = ({ children }) => {
+const SectionTitle = ({ children, className }) => {
   return (
-    <h1 className="text-4xl font-bold text-white mb-12 tracking-tight">
+    <h2 className={`text-3xl font-bold text-white mb-8 tracking-tight  ${className}`}>
       {children}
-    </h1>
+    </h2>
   );
 };
 

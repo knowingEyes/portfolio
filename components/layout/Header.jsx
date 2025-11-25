@@ -1,6 +1,7 @@
 import { MenuIcon } from "lucide-react";
 import { HamburgerIcon } from "lucide-react";
 import { Terminal } from "lucide-react";
+import DesktopNavbar from "./DesktopNavbar";
 const Header = () => {
   return (
     <header className="p-4 flex items-center justify-between">
@@ -10,7 +11,8 @@ const Header = () => {
         </div>
         <span className="uppercase  font-semibold">web_dev_</span>
       </div>
-      <MenuIcon />
+      <DesktopNavbar/>
+      {/* <MenuIcon /> */}
     </header>
   );
 };

@@ -11,9 +11,9 @@ const Expertise = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 ">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-6 tracking-tight leading-tight">
-              Engineering at the intersection of{" "}
-              <span className="text-primary-500">AI</span> and{" "}
+            <h2 className="text-3xl font-bold  mb-6 tracking-tight leading-tight">
+              Engineering at the intersection of
+              <span className="text-primary-500">AI</span> and
               <span className="text-primary-500">Infrastructure</span>.
             </h2>
             <p className="text-sm text-gray-400 leading-loose mb-8">
