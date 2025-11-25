@@ -10,7 +10,7 @@ const Button = ({
   ...props
 }) => {
   let variantStyle;
-  
+
   switch (variant) {
     case "outline":
       variantStyle =
@@ -35,7 +35,7 @@ const Button = ({
     <Tag
       href={href}
       onClick={onClick}
-      className={`${baseStyle} ${variantStyle} px-5 py-2.5 ${className}`}
+      className={`${baseStyle} ${variantStyle} px-5 py-2.5 cursor-pointer ${className}`}
       {...props}
     >
       {children}
