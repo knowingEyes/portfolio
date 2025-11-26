@@ -17,14 +17,14 @@ const About = () => {
         <div className="space-y-8 mt-12 border-t border-gray-800 pt-12">
           {[1, 2, 3].map((i) => (
             <div key={i} className="grid md:grid-cols-4 gap-6">
-              <div className="text-sm text-gray-500 font-mono">
+              <div className="text-xs text-gray-500 font-mono">
                 202{i} - Present
               </div>
               <div className="md:col-span-3">
                 <h3 className="text-lg font-bold text-white mb-2">
                   Senior Engineer at Tech Corp {i}
                 </h3>
-                <p className="text-sm leading-relaxed">
+                <p>
                   Spearheaded the migration of monolithic services to
                   microservices on Kubernetes. Implemented OpenTelemetry for
                   full observability.

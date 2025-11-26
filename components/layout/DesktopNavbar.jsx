@@ -1,15 +1,5 @@
-import { Home } from "lucide-react";
+import { NAV_ITEMS } from "@/data/nav";
 import Button from "../ui/Button";
-import { User } from "lucide-react";
-import { Code } from "lucide-react";
-import { Mail } from "lucide-react";
-
-const NAV_ITEMS = [
-  { name: "Home", path: "home", icon: Home },
-  { name: "About", path: "about", icon: User },
-  { name: "Projects", path: "projects", icon: Code },
-  { name: "Contact", path: "contact", icon: Mail },
-];
 
 const DesktopNavbar = () => {
   return (

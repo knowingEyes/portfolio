@@ -1,6 +1,6 @@
-const SectionSubtitle = ({ children }) => {
+const SectionSubtitle = ({ children, className }) => {
   return (
-    <p className="text-xs text-gray-200 font-light leading-relaxed mb-8">
+    <p className={` text-gray-400 font-light mb-8 ${className}`}>
       {children}
     </p>
   );

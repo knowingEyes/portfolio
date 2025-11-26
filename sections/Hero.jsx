@@ -15,8 +15,8 @@ const Hero = () => {
             Design Engineer
           </span>
         </h1>
-        <SectionSubtitle>
-          Crafting elegant interfaces where precision meets creativity. <br />
+        <SectionSubtitle className="text-sm">
+          Crafting elegant interfaces where precision meets creativity.
           Focused on building seamless digital experiences for teams that demand
           excellence.
         </SectionSubtitle>

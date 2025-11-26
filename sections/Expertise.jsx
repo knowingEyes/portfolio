@@ -2,6 +2,8 @@ import { TrendingUp } from "lucide-react";
 import SectionLabel from "../components/ui/SectionLabel";
 import { Zap } from "lucide-react";
 import Card from "@/components/ui/Card";
+import SectionTitle from "@/components/ui/SectionTitle";
+import SectionSubtitle from "@/components/ui/SectionSubtitle";
 
 const Expertise = () => {
   return (
@@ -11,17 +13,17 @@ const Expertise = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 ">
           <div>
-            <h2 className="text-3xl font-bold  mb-6 tracking-tight leading-tight">
+            <SectionTitle>
               Engineering at the intersection of
               <span className="text-primary-500">AI</span> and
               <span className="text-primary-500">Infrastructure</span>.
-            </h2>
-            <p className="text-sm text-gray-400 leading-loose mb-8">
+            </SectionTitle>
+            <SectionSubtitle>
               With over 8 years of experience, I focus on building sustainable,
               test-driven codebases that can evolve rapidly. My philosophy is
               rooted in technical excellence and iterative improvement, ensuring
               that complex AI models turn into reliable production services.
-            </p>
+            </SectionSubtitle>
 
             <div className="grid grid-cols-2 gap-4">
               {[
@@ -34,7 +36,7 @@ const Expertise = () => {
                   <div className="text-[10px] uppercase text-gray-600 tracking-wider mb-1">
                     {skill.label}
                   </div>
-                  <div className="text-sm font-mono text-gray-300">
+                  <div className="text-xs font-mono text-gray-300">
                     {skill.val}
                   </div>
                 </div>
@@ -57,7 +59,7 @@ const Expertise = () => {
             ].map((item, i) => (
               <Card
                 key={i}
-                className="flex flex-col justify-center min-h-[160px]"
+                className="flex flex-col justify-center min-h-40"
               >
                 <div className="mb-4 inline-flex p-3 rounded-lg bg-gray-950 border border-gray-800 w-fit">
                   <item.icon className="h-5 w-5 text-primary-400" />
