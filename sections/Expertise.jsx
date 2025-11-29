@@ -1,9 +1,8 @@
-import { TrendingUp } from "lucide-react";
 import SectionLabel from "../components/ui/SectionLabel";
-import { Zap } from "lucide-react";
-import Card from "@/components/ui/Card";
 import SectionTitle from "@/components/ui/SectionTitle";
 import SectionSubtitle from "@/components/ui/SectionSubtitle";
+import StackCard from "@/components/card/StackCard";
+
 
 const Expertise = () => {
   return (
@@ -44,35 +43,7 @@ const Expertise = () => {
             </div>
           </div>
 
-          <div className="grid gap-6">
-            {[
-              {
-                title: "Cloud-Native Architecture",
-                desc: "Designing fault-tolerant distributed systems on AWS & GCP.",
-                icon: TrendingUp,
-              },
-              {
-                title: "High-Performance Pipelines",
-                desc: "Optimizing inference latency and throughput for edge deployment.",
-                icon: Zap,
-              },
-            ].map((item, i) => (
-              <Card
-                key={i}
-                className="flex flex-col justify-center min-h-40"
-              >
-                <div className="mb-4 inline-flex p-3 rounded-lg bg-gray-950 border border-gray-800 w-fit">
-                  <item.icon className="h-5 w-5 text-primary-400" />
-                </div>
-                <h4 className="text-base font-bold text-gray-100 mb-2">
-                  {item.title}
-                </h4>
-                <p className="text-xs text-gray-500 leading-relaxed max-w-sm">
-                  {item.desc}
-                </p>
-              </Card>
-            ))}
-          </div>
+          <StackCard />
         </div>
       </div>
     </section>

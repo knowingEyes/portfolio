@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="pt-20">
+    <section className="pt-20" id="home">
       <div className="flex flex-col space-y-5">
         <StatusBadge />
         <h1 className="text-5xl font-bold mb-8 text-white">

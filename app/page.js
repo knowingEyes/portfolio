@@ -7,13 +7,15 @@ import Projects from "@/sections/Projects";
 
 export default function App() {
   return (
-    <main>
+    <>
       <Header />
-      <Hero />
-      <About />
-      <Expertise />
-      <Projects />
+      <main>
+        <Hero />
+        <About />
+        <Expertise />
+        <Projects />
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }
