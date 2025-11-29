@@ -1,10 +1,20 @@
 import { PlayCircle } from "lucide-react";
 import { DatabaseZap } from "lucide-react";
 import { MonitorSmartphone } from "lucide-react";
-import { SiTailwindcss, SiReact , SiWordpress} from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiReact,
+  SiWordpress,
+  SiNextdotjs,
+} from "react-icons/si";
 import { FileText } from "lucide-react";
 
 export const STACKS_DATA = [
+  {
+    title: "Next.js",
+    desc: "Component architecture & hooks mastery",
+    icon: SiNextdotjs,
+  },
   {
     title: "React",
     desc: "Component architecture & hooks mastery",
@@ -15,15 +25,15 @@ export const STACKS_DATA = [
     desc: "Utility-first design system expertise",
     icon: SiTailwindcss,
   },
+    {
+    title: "Content management",
+    desc: "Sanity Studio & WordPress integration",
+    icon: SiWordpress,
+  },
   {
     title: "Responsive",
     desc: "Mobile-first approach across all projects",
     icon: MonitorSmartphone,
-  },
-  {
-    title: "Content management",
-    desc: "Sanity Studio & WordPress integration",
-    icon: SiWordpress,
   },
   {
     title: "State management",
