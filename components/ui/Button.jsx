@@ -34,7 +34,7 @@ const Button = ({
     <Tag
       href={href}
       onClick={onClick}
-      className={`${baseStyle} ${variantStyle} px-5 py-2.5 cursor-pointer ${className}`}
+      className={`${baseStyle} ${variantStyle}group px-5 py-2.5 cursor-pointer ${className}`}
       {...props}
     >
       {children}

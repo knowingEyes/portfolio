@@ -20,13 +20,13 @@ const Hero = () => {
           Focused on building seamless digital experiences for teams that demand
           excellence.
         </SectionSubtitle>
-        <div>
+        <div className="group">
           <Button>View Projects</Button>
           <Button variant="ghost" className="inline-flex gap-2">
             Contact Me{" "}
             <ArrowRight
               size={15}
-              className="hover:translate-x-1 transition-transform"
+              className="group-hover:translate-x-1 transition-transform"
             />
           </Button>
         </div>
