@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="pt-20" id="home">
-      <div className="flex flex-col space-y-5">
+      <div className="flex flex-col space-y-5 md:items-center md:text-center">
         <StatusBadge />
         <h1 className="text-5xl font-bold mb-8 text-white">
           Frontend{" "}
@@ -16,9 +16,8 @@ const Hero = () => {
           </span>
         </h1>
         <SectionSubtitle className="text-sm">
-          Crafting elegant interfaces where precision meets creativity.
-          Focused on building seamless digital experiences for teams that demand
-          excellence.
+          Developer focused on crafting meaningful digital experiences that
+          blend modern design, responsive layouts, and clean architecture.
         </SectionSubtitle>
         <div className="group">
           <Button>View Projects</Button>

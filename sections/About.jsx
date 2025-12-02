@@ -1,38 +1,44 @@
 import SectionLabel from "../components/ui/SectionLabel";
-import SectionSubtitle from "../components/ui/SectionSubtitle";
-import SectionTitle from "../components/ui/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
+import SectionSubtitle from "@/components/ui/SectionSubtitle";
+import StackCard from "@/components/card/StackCard";
 
 const About = () => {
   return (
-    <section id="about">
+    <section className=" border-b border-gray-900/50 relative">
       <SectionLabel>About</SectionLabel>
-      <SectionTitle>Experience & Technical Stack</SectionTitle>
-      <div className=" text-gray-400">
-        <SectionSubtitle>
-          My engineering journey began with backend systems and evolved into a
-          deep focus on the infrastructure required to support modern AI
-          applications at scale.
-        </SectionSubtitle>
 
-        <div className="space-y-8 mt-12 border-t border-gray-800 pt-12">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="grid md:grid-cols-4 gap-6">
-              <div className="text-xs text-gray-500 font-mono">
-                202{i} - Present
+      <div>
+        <div>
+          <SectionTitle>About Me and Technical Stack.</SectionTitle>
+          <SectionSubtitle>
+            I’m a frontend developer who enjoys building clean, modern, and
+            intuitive web experiences. I work mainly with React, Next.js, and
+            modern UI tools, focusing on structure, design, and smooth user
+            interactions. I learn fast, adapt quickly, and continually improve
+            my craft through real projects and experimentation.
+          </SectionSubtitle>
+
+          <div className="grid grid-cols-2 gap-4">
+            {[
+              { label: "Backend", val: "Exploring" },
+              { label: "Cloud", val: "Exploring" },
+              { label: "MLOps", val: "Exploring" },
+              { label: "Frontend", val: "React / Next" },
+            ].map((skill, i) => (
+              <div key={i} className="border-l border-gray-800 pl-4">
+                <div className="text-[10px] uppercase text-gray-600 tracking-wider mb-1">
+                  {skill.label}
+                </div>
+                <div className="text-xs font-mono text-gray-300">
+                  {skill.val}
+                </div>
               </div>
-              <div className="md:col-span-3">
-                <h3 className="text-lg font-bold text-white mb-2">
-                  Senior Engineer at Tech Corp {i}
-                </h3>
-                <p>
-                  Spearheaded the migration of monolithic services to
-                  microservices on Kubernetes. Implemented OpenTelemetry for
-                  full observability.
-                </p>
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
+        <StackCard />
       </div>
     </section>
   );

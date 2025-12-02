@@ -26,6 +26,12 @@
   }
 }
 
+@layer utilities {
+  .grid-layout {
+    @apply grid gap-4 md:grid-cols-2 mt-8;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #030712;

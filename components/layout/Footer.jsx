@@ -2,7 +2,7 @@ const Footer = () => (
   <footer className="bg-gray-950 py-16 border-t border-gray-900">
     <div className="max-w-6xl mx-auto px-4 text-center">
       <div className="mb-8 flex justify-center space-x-8">
-        {["LinkedIn", "GitHub", "Twitter"].map((social) => (
+        {["GitHub", "Twitter"].map((social) => (
           <a
             key={social}
             href="#"

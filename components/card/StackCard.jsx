@@ -8,10 +8,9 @@ import Card from "../ui/Card";
 const StackCard = () => {
   const [showMore, setShowMore] = useState(false);
 
-  //
+
   const handleShowLess = () => {
     const savedPosition = [...document.querySelectorAll(".item")][3].offsetTop;
-    console.log(savedPosition);
     if (savedPosition) {
       window.scrollTo({ top: savedPosition * 2, behavior: "smooth" });
       setShowMore(false);
@@ -22,7 +21,7 @@ const StackCard = () => {
   const stacks = showMore ? STACKS_DATA : STACKS_DATA.slice(0, 4);
 
   return (
-    <div className="grid gap-4">
+    <div className="grid-layout">
       {stacks.map((item, i) => (
         <Card key={i} className="flex flex-col justify-center min-h-40 item">
           <div
@@ -39,6 +38,7 @@ const StackCard = () => {
           </p>
         </Card>
       ))}
+      {showMore && <div className="hidden md:block"></div>}
       <Button
         className="w-max"
         variant="outline"

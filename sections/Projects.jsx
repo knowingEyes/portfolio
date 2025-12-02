@@ -12,7 +12,7 @@ const Projects = () => {
       <SectionTitle>
         Technical solutions engineered for scale and performance.
       </SectionTitle>
-      <div className="grid gap-4">
+      <div className="grid-layout">
       {PROJECTS_DATA.map((project) => (
         <ProjectCard {...project} key={project.id} />
       ))}
