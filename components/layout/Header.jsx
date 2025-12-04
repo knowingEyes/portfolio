@@ -1,13 +1,16 @@
 "use client";
-import { MenuIcon, HamburgerIcon, Terminal } from "lucide-react";
+import { MenuIcon, Terminal } from "lucide-react";
 
 import DesktopNavbar from "./DesktopNavbar";
 import { useState } from "react";
 import { X } from "lucide-react";
 import Button from "../ui/Button";
 import MobileNavBar from "./MobileNavBar";
+import { useActiveSection } from "@/hooks/useActiveSection";
+
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const activeSec = useActiveSection();
   return (
     <header className=" sticky top-0 z-50 bg-gray-950/80 backdrop-blur-xl border-b border-gray-800/60">
       <div className="relative p-4 flex justify-between  w-full items-center ">
@@ -18,7 +21,9 @@ const Header = () => {
           <span className="uppercase  font-semibold">web_dev_</span>
         </div>
         <DesktopNavbar />
-        {open && <MobileNavBar />}
+
+        {/* show mobile NavBar */}
+        {open && <MobileNavBar activeSec={activeSec} />}
 
         {/* mobile menu toggle button */}
         <Button

@@ -1,18 +1,8 @@
 "use client";
 import { NAV_ITEMS } from "@/data/nav";
 import Button from "../ui/Button";
-import { useEffect, useState } from "react";
 
-const MobileNavBar = () => {
-  const [activeSec, SetActiveSec] = useState("#home");
-
-  useEffect(() => {
-    const hashChange = () => SetActiveSec(window.location.hash);
-
-    window.addEventListener("hashchange", hashChange);
-    () => window.removeEventListener("hashchange", hashChange);
-  }, [activeSec]);
-
+const MobileNavBar = ({activeSec}) => {
   return (
     <nav
       className={`flex md:hidden gap-2 flex-col items-start bg-background/99 left-0 right-0 top-full absolute text-sm  border-b border-gray-800 p-4`}

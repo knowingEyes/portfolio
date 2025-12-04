@@ -8,16 +8,19 @@ import Card from "../ui/Card";
 const StackCard = () => {
   const [showMore, setShowMore] = useState(false);
 
-
   const handleShowLess = () => {
-    const savedPosition = [...document.querySelectorAll(".item")][3].offsetTop;
-    if (savedPosition) {
-      window.scrollTo({ top: savedPosition * 2, behavior: "smooth" });
+    const savedPosition = [...document.querySelectorAll(".item")];
+    const lastViewedPosition = savedPosition[savedPosition.length - 1];
+    if (savedPosition && lastViewedPosition) {
+      window.scrollTo({
+        top: lastViewedPosition.offsetTop,
+        behavior: "smooth",
+      });
       setShowMore(false);
     }
   };
 
-  // show only first 4 items if ShowMore is false
+  // Show only first 4 items if ShowMore is false
   const stacks = showMore ? STACKS_DATA : STACKS_DATA.slice(0, 4);
 
   return (

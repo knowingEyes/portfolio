@@ -3,7 +3,6 @@ import Card from "../ui/Card";
 import { Code } from "lucide-react";
 
 const ProjectCard = ({ title, description, stack, link }) => {
-  console.log(link);
   return (
     <Card className="h-full flex flex-col p-0 bg-gray-900/20 absolute">
       <div className="p-8  relative z-10">

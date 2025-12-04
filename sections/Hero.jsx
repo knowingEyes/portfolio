@@ -7,7 +7,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <section className="pt-20" id="home">
-      <div className="flex flex-col space-y-5 md:items-center md:text-center">
+      <div className=" flex flex-col space-y-5 md:items-center md:text-center">
         <StatusBadge />
         <h1 className="text-5xl font-bold mb-8 text-white">
           Frontend{" "}
@@ -20,8 +20,8 @@ const Hero = () => {
           blend modern design, responsive layouts, and clean architecture.
         </SectionSubtitle>
         <div className="group">
-          <Button>View Projects</Button>
-          <Button variant="ghost" className="inline-flex gap-2">
+          <Button href="#projects">View Projects</Button>
+          <Button variant="ghost" className="inline-flex gap-2" href="#contact">
             Contact Me{" "}
             <ArrowRight
               size={15}

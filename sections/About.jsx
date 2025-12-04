@@ -5,7 +5,7 @@ import StackCard from "@/components/card/StackCard";
 
 const About = () => {
   return (
-    <section className=" border-b border-gray-900/50 relative">
+    <section className=" border-b border-gray-900/50 relative" id="about">
       <SectionLabel>About</SectionLabel>
 
       <div>
