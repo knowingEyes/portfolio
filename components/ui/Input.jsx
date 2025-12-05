@@ -5,12 +5,12 @@ const Input = ({
   label,
   ...props
 }) => (
-  <div>
+  <div className={className}>
     <label className="label">{label}</label>
     <input
       type={type}
       placeholder={placeholder}
-      className={`input-class ${className}`}
+      className={`input-class`}
       {...props}
     />
   </div>

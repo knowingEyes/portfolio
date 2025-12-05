@@ -7,7 +7,7 @@ const { default: SectionLabel } = require("@/components/ui/SectionLabel");
 const { Mail } = require("lucide-react");
 const { Clock } = require("lucide-react");
 
-const Contact = () => (
+const Contact =  () => (
   <section id="contact">
     <div className="grid md:grid-cols-2 gap-16 lg:gap-24">
       <div>
