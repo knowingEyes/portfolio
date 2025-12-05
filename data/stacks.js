@@ -7,7 +7,7 @@ import {
   SiWordpress,
   SiNextdotjs,
 } from "react-icons/si";
-import { FileText } from "lucide-react";
+
 
 export const STACKS_DATA = [
   {

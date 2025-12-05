@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSProvider from "./Providers/AOSProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Portfolio - Ibrahim Oluwa",
-  description: "The portfolio website of  Ibrahim Oluwa, showcasing projects and skills.",
+  description:
+    "The portfolio website of  Ibrahim Oluwa, showcasing projects and skills.",
 };
 
 export default function RootLayout({ children }) {
@@ -22,7 +24,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AOSProvider>{children}</AOSProvider>
       </body>
     </html>
   );

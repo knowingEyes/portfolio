@@ -1,6 +1,5 @@
 import Button from "@/components/ui/Button";
 import SectionSubtitle from "@/components/ui/SectionSubtitle";
-import SectionTitle from "@/components/ui/SectionTitle";
 import StatusBadge from "@/components/ui/StatusBadge";
 import { ArrowRight } from "lucide-react";
 

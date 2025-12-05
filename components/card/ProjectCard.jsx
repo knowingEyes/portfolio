@@ -10,17 +10,12 @@ const ProjectCard = ({ title, description, stack, link }) => {
           <div className="p-2 bg-gray-950 rounded-md border border-gray-800 text-primary-500 group-hover:text-primary-400 group-hover:border-primary-500/30 transition-colors">
             <Code className="h-5 w-5" />
           </div>
-          <a href={`https://${link}.vercel.app`} >
-          <ExternalLink
-            className="h-4 w-4 cursor-pointer text-gray-700 hover:text-gray-400 transition-colors"
-          
-          />
+          <a href={`https://${link}.vercel.app`}>
+            <ExternalLink className="h-4 w-4 cursor-pointer text-gray-700 hover:text-gray-400 transition-colors" />
           </a>
         </div>
 
-        <h4 className="text-xl font-bold text-gray-100 mb-3">
-          {title}
-        </h4>
+        <h4 className="text-xl font-bold text-gray-100 mb-3">{title}</h4>
 
         <p className="text-sm text-gray-500 leading-relaxed mb-8">
           {description}
