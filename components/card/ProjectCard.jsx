@@ -2,9 +2,12 @@ import { ExternalLink } from "lucide-react";
 import Card from "../ui/Card";
 import { Code } from "lucide-react";
 
-const ProjectCard = ({ title, description, stack, link }) => {
+const ProjectCard = ({ title, description, stack, link, id }) => {
   return (
-    <Card className="h-full flex flex-col p-0 bg-gray-900/20 absolute">
+    <Card
+      className="h-full flex flex-col p-0 bg-gray-900/20 absolute"
+      data-aos-delay={`${id * 100}`}
+    >
       <div className="p-8  relative z-10">
         <div className="flex justify-between items-start mb-6">
           <div className="p-2 bg-gray-950 rounded-md border border-gray-800 text-primary-500 group-hover:text-primary-400 group-hover:border-primary-500/30 transition-colors">

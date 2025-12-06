@@ -26,7 +26,11 @@ const StackCard = () => {
   return (
     <div className="grid-layout">
       {stacks.map((item, i) => (
-        <Card key={i} className="flex flex-col justify-center min-h-40 item">
+        <Card
+          key={i}
+          className="flex flex-col justify-center min-h-40 item"
+          data-aos-delay={`${i * 100}`}
+        >
           <div
             className="mb-4 inline-flex p-3 rounded-lg bg-gray-950 border border-gray-800 w-fit group-hover:scale-[1.09]
         group-hover:border-white transition-transform cursor-pointer duration-500"
